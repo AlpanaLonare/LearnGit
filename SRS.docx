@@ -1,1 +1,123 @@
-Add Something
+Software Requirements Specification
+
+Project Topic  : Blood Bank Management System
+1.	Introduction (Client acceptance)
+1.1	The Blood Bank Management System is a software application designed to facilitate the efficient management of blood inventory, donor information, and blood requests within a blood bank. It serves as a centralized platform for blood banks to streamline their operations and ensure the availability of blood units for medical facilities and patients in need.
+1.2	Purpose
+2.	To aims to improve the overall efficiency, accuracy, and transparency of blood bank operations. It simplifies the management of donor information, ensuring proper documentation of personal details, blood types, and donation history. The system also allows blood banks to maintain an up-to-date record of available blood units, including their respective types, quantities, and expiration dates.
+2.1	Intended Audience
+The main system user roles are as follows:-
+•	Application  admin
+•	Blood Bank Authority
+•	Member
+•	Guest (General Public)
+2.2	Intended Use
+2.3	. By utilizing this system, blood banks can effectively manage donor records, track blood inventory, process blood requests, and perform administrative tasks in a more organized and systematic manner
+2.4	 Scope
+3.	The scope of the Blood Bank Management System encompasses various modules and functionalities that contribute to the effective management of blood banks. The system aims to automate and streamline processes related to blood donation, inventory management, blood requests, and administrative tasks. The key components of the system's scope include:
+
+1. Donor Management:
+   - Capture and store donor information such as personal details, contact information, and blood type
+- Generate unique donor IDs for easy identification and tracking.
+2. Blood Inventory Management:
+   - Track and manage the stock of blood units available in the blood bank.
+3. Blood Request Management:
+   - Receive and record blood requests from hospitals or medical facilities.
+
+
+
+3.1	Definitions 
+3.2	Definitions:-
+a.	Member stands for a registered user of the system. The person need to register with the system, providing the required data and paid the fee, according to the membership 
+b.	Guest(General public)  is any person, browsing the application
+
+4.	Overall Description (Client acceptance + Development team)
+This is a online library management system(eLibSys), where the librarian, members and guests can operate with. The librarian can do the book management. Members can avail library facilities, do payment etc. Guests can register an become members of the library.
+4.1	User Needs
+a.	A library web application with a site, accessible to general public also
+b.	The library activities will be possible only for registered users of the system
+c.	A member can query, take, reserve, or return a library book
+d.	The librarian has to manage the library books data as well as issue, and take return of the book from a member.
+e.	Librarian can apply the rules for fine calculation, time to time.
+f.	
+4.2	Assumptions and Dependencies (Design/Development team)
+1.	To use the library activities, a user should be registered first.
+2.	Different types of memberships are available with the library, which are been maintained by the librarian. The fee for each type are also different.
+3.	
+3. System Features and Requirements
+        3.1 Functional Requirements
+The complete functional modules of the application includes the following:-
+a.	User Registration
+b.	User login
+c.	Browse for books
+d.	Manage the books
+e.	Perform library activities
+f.	Change password
+g.	User management
+h.	Fee/fine sub-system
+i.	Withdraw membership
+j.	Logout
+Functional requirements in detail
+3.1.1	User Registration
+a)	For the user registration, the librarian has to add different types of memberships and the respective fee details. Data are as follows:-
+a.	MemType
+b.	Description
+c.	Fee
+
+
+
+b)	In this functionality, any general public user can register himself/herself to the system. The data required to identify the members are as follows:-
+a.	UserID
+b.	Name
+c.	Address
+d.	Password
+e.	Contact number
+f.	membershipType
+g.	email
+There is constraint on the memberID, which can not be duplicated. This should be Unique for every member.
+    After submitting the registration form, based on the membership type, the fee is calculated and displayed to the user. He need to pay the amount to the library. 
+Once the payment is done by the user, librarian has to update the payment status of the person. Thereafter, the member can perform any library related activities.
+When a member has been registered, the status of that member will be kept as TRUE by default.
+
+
+3.1.2	User login
+There are major User roles for the system. They are Application admin, Librarian and member. The System users has to login to perform the system activities.
+The users need to provide UserId and Password to login. The data is validated with the database and if validated successfully, the status of the user is checked to be TRUE. If found true, the User session will start and the user gets the Home page for the user role.
+a)	Librarian
+Home page of Librarian provide options to perform the following activities:-
+a.	Member management
+i.	Edit the status of a  member
+ii.	
+b.	Book management
+i.	Add new books to library
+ii.	Edit an existing book
+iii.	Remove  a book from library (status to false)
+c.	Library activities
+i.	Issue a book to a member
+ii.	Return the book
+1.	Fine applied, if applicable
+iii.	Manage  the fee
+iv.	Manage membership types
+v.	Manage fine and due period
+b)	Member
+c)	Application Admin
+
+3.1.3	Browse for books
+3.1.4	Manage the books
+3.1.5	Perform library activities
+3.1.6	Change password
+3.1.7	User management 
+3.1.8	Fee/fine sub-system
+3.1.9	Withdraw membership
+3.1.10	Logout
+
+        3.2 External Interface Requirements
+        3.3 System Features
+        3.4 Nonfunctional Requirements
+
+
+
+
+
+
+
